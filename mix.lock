@@ -1,0 +1,7 @@
+%{"amqp_client": {:git, "git://github.com/d0rc/amqp_client.git", "16b6c421139dba0a34d6c1e26f56c1dde5057a7f", []},
+  "exactor": {:git, "git://github.com/sasa1977/exactor.git", "65a2cef190d2bd654d08c6f9ea49c8533bc432f6", []},
+  "exrabbit": {:git, "git://github.com/d0rc/exrabbit.git", "9823e83cc979d9570c06802647ed89fe44ecd370", []},
+  "jazz": {:git, "git://github.com/d0rc/jazz.git", "832431cf9c3134b1c3cd633e5b5d697db853efd6", [branch: "v0.14.1"]},
+  "rabbit_common": {:git, "git://github.com/issuu/rabbit_common.git", "e3484d3ea4d9b57ae12da58c5c9dcf529a686139", [tag: "v3.3.0"]},
+  "sweetconfig": {:git, "git://github.com/d0rc/sweetconfig.git", "104ff3ad7cfde5fe35c4be7e3372a31c0cc9e32d", []},
+  "yamler": {:git, "git://github.com/goertzenator/yamler.git", "5084e38b7bf34fa74d1d064b3eec5cc185e6ca4b", [branch: "mapping_as_map"]}}
