@@ -46,7 +46,7 @@ defmodule Bunnytalk.Publisher do
     case Jazz.encode(msg) do
       {:ok, json} -> publish(channel, exchange, "", json, :wait_confirmation) |> reply
       _err -> 
-        Lager.error "Cannot encode #{inspect _err}"
+        IO.puts "Cannot encode #{inspect _err}"
     end
   end
 end
