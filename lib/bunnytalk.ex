@@ -42,6 +42,9 @@ defmodule Bunnytalk.Publisher do
     initial_state(%{amqp: amqp, channel: channel})
   end
 
+  defcall call_publish(exchange, msg), when: is_binary(msg), state: %{amqp: _amqp, channel: channel} do
+    publish(channel, exchange, "", msg, :wait_confirmation) |> reply
+  end
   defcall call_publish(exchange, msg), state: %{amqp: _amqp, channel: channel} do
     case Jazz.encode(msg) do
       {:ok, json} -> publish(channel, exchange, "", json, :wait_confirmation) |> reply
